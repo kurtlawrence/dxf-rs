@@ -54,7 +54,7 @@ impl ViewPort {
         ensure_positive_or_default(&mut self.view_height, 1.0);
         ensure_positive_or_default(&mut self.view_port_aspect_ratio, 1.0);
         ensure_positive_or_default(&mut self.lens_length, 50.0);
-        ensure_positive_or_default_i16(&mut self.ucs_icon, 3);
+        ensure_positive_or_default_i32(&mut self.ucs_icon, 3);
         ensure_positive_or_default_i32(&mut self.circle_sides, 1000);
     }
 }

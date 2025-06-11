@@ -1314,6 +1314,11 @@ impl ViewMode {
             flags: i32::from(val),
         }
     }
+    pub fn from_i32(val: i32) -> Self {
+        ViewMode {
+            flags: val
+        }
+    }
     pub fn raw(self) -> i32 {
         self.flags
     }
