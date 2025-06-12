@@ -1309,11 +1309,6 @@ pub struct ViewMode {
 }
 
 impl ViewMode {
-    pub fn from_i16(val: i16) -> Self {
-        ViewMode {
-            flags: i32::from(val),
-        }
-    }
     pub fn from_i32(val: i32) -> Self {
         ViewMode {
             flags: val
