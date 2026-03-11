@@ -86,7 +86,7 @@ impl DrawingItemMut<'_> {
             DrawingItemMut::ViewPort(ref mut v) => v.handle = handle,
         }
     }
-    pub fn to_drawing_item(&self) -> DrawingItem {
+    pub fn to_drawing_item(&self) -> DrawingItem<'_> {
         match self {
             DrawingItemMut::AppId(ref app_id) => DrawingItem::AppId(app_id),
             DrawingItemMut::Block(ref b) => DrawingItem::Block(b),

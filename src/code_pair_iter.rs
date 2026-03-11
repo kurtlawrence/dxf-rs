@@ -10,17 +10,20 @@ pub(crate) trait CodePairIter: Iterator<Item = DxfResult<CodePair>> {
 }
 
 /// Directly returns code pairs; primarily used in tests.
+#[cfg(test)]
 pub(crate) struct DirectCodePairIter {
     pairs: Vec<CodePair>,
     offset: usize,
 }
 
+#[cfg(test)]
 impl CodePairIter for DirectCodePairIter {
     fn read_as_utf8(&mut self) {
         // noop
     }
 }
 
+#[cfg(test)]
 impl Iterator for DirectCodePairIter {
     type Item = DxfResult<CodePair>;
     fn next(&mut self) -> Option<DxfResult<CodePair>> {
