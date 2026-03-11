@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## 0.6.1
+
+- Update `xmltree` dependency to 0.9.0 to fix CVE warning.
+
 ## 0.6.0
 
 - Improvements writing files for `R13`+.

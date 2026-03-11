@@ -3,24 +3,9 @@
 
 A rust [crate](https://crates.io/crates/dxf) for reading and writing DXF CAD files.
 
-# Usage
+# Examples
 
-Put this in your `Cargo.toml`:
-
-``` toml
-[dependencies]
-dxf = "0.5.0"
-```
-
-Or if you want [serde](https://github.com/serde-rs/serde) support, enable the `serialize` feature:
-
-``` toml
-[dependencies]
-dxf = { version = "0.5.0", features = ["serialize"] }
-```
-
-> Note that `serde` support is intended to aid in debugging and since the serialized format is heavily
-dependent on the layout of the structures, it may change at any time.
+Please see the `examples/` directory in this repo.
 
 # Documentation
 
